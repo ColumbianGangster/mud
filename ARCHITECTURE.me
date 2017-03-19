@@ -1,0 +1,26 @@
+CURRENT MODULE DESIGN
+
+* Server has the main function
+
+
+* ServerSocketCreator creates the Server Socket
+* ServerConfig contains all server configuration, such as port and hostname
+* ServerState holds the server's state
+
+
+* ServerAdminHandler creates the ServerAdminThread
+* ServerAdminThread reads the server admin's input
+* ServerAdminInputLogger logs the server admin input before it is parsed by the ServerAdminInputParser
+* ServerAdminInputParser parses the server admin's input.
+* ServerAdminCommandController takes the parsed input and calls the appropriate command
+
+
+* Filepaths defines all the filepaths used by the program
+* Landing reads the landing.txt, which is displayed to the client when they connect to the server
+* FilereadingConfig defines how newlines are handled in the program
+
+
+* ClientHandler determines which threading strategy to use to handle clients.
+* ClientHandlerThreadedStrategy defines the multithreaded strategy. It defines SpecificClientThread and ListenForClientsThread.
+* ListenForClientsThread listens for new connections (in other words, new clients); it then dispatches a new SpecificClientThread
+* SpecificClientThread sends and receives data to a specific client.

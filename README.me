@@ -1,0 +1,37 @@
+PLANNED FEATURES
+
+* Multithreaded network server
+* Supports multiple concurrent users
+* Global chat
+* Large, expandable virtual world
+* Player movement
+* Player inventory
+* In game help
+* Persistent world
+* Basic OLC for rooms and objects
+* Maintainable
+
+INSTALLATION
+
+From separate terminals, run:
+* python server.py
+and
+* python client.py
+
+FEATURE CHECK LIST
+
+Accepts multiple connections from players -- DONE
+Maintains a list of connected players -- ALMOST
+Asks players for a name and password -- NOPE
+Saves player files to disk (name, password, current room, player flags) -- NOPE
+Implements the commands: quit, look, say, tell, help, goto, transfer, shutdown, setflag, clearflag -- WIP
+Implements movement commands (eg. n, s, e, w) -- NOPE
+Illustrates sending messages to a single player (eg. a tell) or all players (eg. a say) -- NOPE
+Handles players disconnecting or quitting -- NOPE
+Illustrates a "connection dialog" - players get asked their name, then their password. -- NOPE
+Allows new players to create a character by specifying a name and password. -- NOPE
+Illustrates periodic messages using a timer (at present it just shows a message every few seconds) -- NOPE
+Illustrates rudimentary player control (eg. gagging players from talking) -- NOPE
+Loads room descriptions and exits from a disk file -- NOPE
+Loads messages from a disk file -- NOPE
+Loads landing page from a disk file -- YES

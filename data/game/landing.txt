@@ -1,0 +1,4 @@
+This is MouseMUD version
+Copyright (C) 2017 by oGsMousE
+
+Version 0.01 Alpha
